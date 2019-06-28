@@ -21,6 +21,7 @@ public class Jacket extends Clothes {
         this.type = type;
     }
 
+
     public String showJacket() {
         String msg;
 
@@ -33,4 +34,5 @@ public class Jacket extends Clothes {
         return this.getColor() + " " + msg +
                 this.getMaterial() + " jacket with " + this.getType();
     }
+
 }
