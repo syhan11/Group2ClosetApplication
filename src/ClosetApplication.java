@@ -1,11 +1,12 @@
 import java.util.ArrayList;
 
-public class ClosetApplication {
-    ArrayList<Jacket> allJackets = new ArrayList<Jacket>();
-    ArrayList<Shirt> allShirts = new ArrayList<Shirt>();
-    ArrayList<Pants> allPants = new ArrayList<Pants>();
-    ArrayList<Shoes> allShoes = new ArrayList<Shoes>();
 
+public class ClosetApplication {
+
+    public static ArrayList<Jacket> allJackets = new ArrayList<Jacket>();
+    public static ArrayList<Shirt> allShirts = new ArrayList<Shirt>();
+    public static ArrayList<Pants> allPants = new ArrayList<Pants>();
+    public static ArrayList<Shoes> allShoes = new ArrayList<Shoes>();
 
 
 
@@ -47,4 +48,46 @@ public class ClosetApplication {
 
 
     }
+
+
+    public static void initalizeJackets() {
+
+        Jacket item = new Jacket("cotton", "blue", true,
+                false, "2 buttons");
+        allJackets.add(item);
+
+        item = new Jacket("linen", "brown", true,
+                false, "3 buttons");
+        allJackets.add(item);
+
+        item = new Jacket("polyester", "grey", true,
+                false, "hood");
+        allJackets.add(item);
+
+        item = new Jacket("linen", "yellow", true,
+                false, "no butons");
+        allJackets.add(item);
+
+        item = new Jacket("polyester", "white", true,
+                false, "zipper");
+        allJackets.add(item);
+
+
+
+
+    }
+
+    public static void initalizeShirts() {
+
+    }
+
+    public static void initalizePants() {
+
+    }
+
+    public static void initalizeShoes() {
+
+    }
+
+
 }

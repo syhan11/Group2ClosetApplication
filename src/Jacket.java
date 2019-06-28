@@ -8,6 +8,10 @@ public class Jacket extends Clothes {
         type = "zipper";
     }
 
+    public Jacket(String material, String color, boolean casual, boolean shortlength, String type) {
+        super(material, color, casual, shortlength);
+        this.type = type;
+    }
 
     public String getType() {
         return type;
