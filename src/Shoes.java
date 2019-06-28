@@ -4,6 +4,7 @@ public class Shoes {
     private String type;       // heel, sneakers, sandles, dress, casual (default)
 
     public Shoes() {
+
         material = "";
         color = "";
         type = "casual";

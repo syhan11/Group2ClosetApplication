@@ -73,19 +73,45 @@ public class ClosetApplication {
         allJackets.add(item);
 
 
-
-
     }
 
     public static void initalizeShirts() {
 
+        //Shirt sitem = new Shirt(String material, String color, boolean casual, boolean shortlength, String type
+
+        Shirt item = new Shirt ("linen", "red", true, true, "uTshirt" );
+        allShirts.add(item);
+
+        item = new Shirt ("Denim", "white", true, true, "buttons" );
+        allShirts.add(item);
+
+        item = new Shirt ("Fur", "brown", true, true, "collarshirt" );
+        allShirts.add(item);
+
+        item = new Shirt ("cotton", "brown", true, true, "vTshrit" );
+        allShirts.add(item);
     }
 
     public static void initalizePants() {
+// jean (default) , sweat, dress, casual
+        Pants item = new Pants ("linen", "red", true, true, "jean");
+        allPants.add(item);
 
+        item = new Pants ("linen", "red", true, true, "sweat");
+        allPants.add(item);
+
+        item = new Pants ("linen", "red", true, true, "dress");
+        allPants.add(item);
     }
 
     public static void initalizeShoes() {
+        // heel, sneakers, sandles, dress, casual (default)
+        Shoes item = new Shoes ("linen", "red", "heel");
+        allShoes.add(item);
+
+        item = new Shoes ("fur", "red", "sneakers");
+        allShoes.add(item);
+
 
     }
 
