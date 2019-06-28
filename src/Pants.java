@@ -19,4 +19,18 @@ public class Pants extends Clothes {
     public void setType(String type) {
         this.type = type;
     }
+
+
+    public String showPants() {
+        String msg;
+
+        if (this.isShortlength())
+            msg = "short";
+        else
+            msg = "long";
+
+
+        return this.getColor() + " " + msg +
+                this.getMaterial() + " " + this.getType() + " pants";
+    }
 }

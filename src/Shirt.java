@@ -1,10 +1,10 @@
 public class Shirt extends Clothes {
-    private String type;  // vTshrit (default), uTshirt, collarshirt, buttons
+    private String type;  // v neck (default), u neck, collars, buttons
 
 
     public Shirt() {
         super();
-        this.type="vTshirt";
+        this.type="v neck";
 
     }
 
@@ -22,4 +22,16 @@ public class Shirt extends Clothes {
     }
 
 
+    public String showShirt() {
+        String msg;
+
+        if (this.isShortlength())
+            msg = "short";
+        else
+            msg = "long";
+
+
+        return this.getColor() + " " + msg +
+                this.getMaterial() + " " + this.getType() + " shirt";
+    }
 }
