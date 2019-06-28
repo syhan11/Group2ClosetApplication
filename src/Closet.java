@@ -52,18 +52,43 @@ public class Closet {
         this.shoesItem = shoesItem;
     }
 
-    public Jacket lookForItem(String color){
+    public Jacket lookForJacket(String color){
         String str = this.jacketItem.getColor();
 
         if (color.equalsIgnoreCase(str))
             return  this.jacketItem;
         else
             return null;
+    }
 
+    public Shirt lookForShirt(String color){
+        String str = this.shirtItem.getColor();
+
+        if (color.equalsIgnoreCase(str))
+            return  this.shirtItem;
+        else
+            return null;
+    }
+
+    public Pants lookForPants(String color){
+        String str = this.pantsItem.getColor();
+
+        if (color.equalsIgnoreCase(str))
+            return  this.pantsItem;
+        else
+            return null;
+    }
+
+
+
+    public String showCloset() {
+        String msg = this.jacketItem.showJacket()+ ", " +
+                this.shirtItem.showShirt() + ", " +
+                this.pantsItem.showPants() + ", " +
+                this.shoesItem.showShoes();
+
+        return msg;
 
     }
 
-    public void initalizeCloset() {
-
-    }
 }

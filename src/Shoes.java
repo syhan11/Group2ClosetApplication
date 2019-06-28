@@ -1,7 +1,7 @@
 public class Shoes {
     private String material;
     private String color;
-    private String type;       // heel, sneakers, sandles, dress, casual (default)
+    private String type;       // heels, sneakers, sandles, dress, casual (default)
 
     public Shoes() {
         material = "";
@@ -37,5 +37,21 @@ public class Shoes {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+
+    public String showShoes() {
+        String msg ="", shoetype = this.getType();
+
+        switch (shoetype) {
+            case "casual":
+            case "dress":
+                msg = shoetype + " shoes";
+                break;
+            default:
+                msg = shoetype;
+                break;
+        }
+        return this.getColor() + " " + this.getMaterial() + msg;
     }
 }

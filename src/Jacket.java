@@ -20,4 +20,17 @@ public class Jacket extends Clothes {
     public void setType(String type) {
         this.type = type;
     }
+
+    public String showJacket() {
+        String msg;
+
+        if (this.isShortlength())
+            msg = "short";
+        else
+            msg = "long";
+
+
+        return this.getColor() + " " + msg +
+                this.getMaterial() + " jacket with " + this.getType();
+    }
 }

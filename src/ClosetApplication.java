@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 
 public class ClosetApplication {
@@ -19,23 +20,25 @@ public class ClosetApplication {
         initalizePants();
         initalizeShoes();
 
-        Closet ansuCloset new Closet();
-        Closet kellyCloset new Closet();
-        Closet sueCloset new Closet();
+        Closet ansuCloset = new Closet();
+        Closet kellyCloset = new Closet();
+        Closet sueCloset = new Closet();
 
 
-        ansuCloset.initalizeCloset();
+        initalizeSuitcase(ansuCloset);
+        /*
         kellyCloset.initalizeCloset();
         sueCloset.initalizeCloset();
+        */
 
         // get jacket information from the user
         // set variable for searching jacket, like color and/or material
-
-        Jacket jacket = ansuCloset.lookForItem("blue");
+/***
+        Jacket jacket = ansuCloset.lookForJacket("blue");
         if (jacket == null) {
-            jacket = kellyCloset.lookForItem("blue");
+            jacket = kellyCloset.lookForJacket("blue");
             if (jacket == null) {
-                jacket = sueCloset.lookForItem("blue");
+                jacket = sueCloset.lookForJacket("blue");
                 if (jacket == null) {
                     System.out.println("blue jacket not available.");
                 }
@@ -45,6 +48,9 @@ public class ClosetApplication {
         if (jacket != null) {
             System.out.println("blue jacket found");
         }
+ ****/
+        // print out the content of each closet
+        System.out.println("Ansu Closet has \n" + ansuCloset.showCloset());
 
 
     }
@@ -89,5 +95,7 @@ public class ClosetApplication {
 
     }
 
+    public static void initalizeSuitcase(Closet closet){
 
+    }
 }
