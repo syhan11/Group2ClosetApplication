@@ -16,4 +16,5 @@ public class Jacket extends Clothes {
     public void setType(String type) {
         this.type = type;
     }
+
 }
